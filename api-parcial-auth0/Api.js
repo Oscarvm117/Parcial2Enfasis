@@ -14,7 +14,7 @@ const KEYCLOAK_URL = 'http://localhost:8080';
 const REALM = 'parcial-oauth';
 const JWKS_URI = `${KEYCLOAK_URL}/realms/${REALM}/protocol/openid-connect/certs`;
 
-// Cliente para verificar tokens JWT
+
 const client = jwksClient({
   jwksUri: JWKS_URI,
   cache: true,
